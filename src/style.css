@@ -10,7 +10,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 #inp {
@@ -34,31 +34,13 @@ body {
   justify-content: space-between;
 }
 
-.thelist {
-  width: 500px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid grey;
-  padding: 4%;
-  background-color: white;
-  display: flex;
-  gap: 10px;
-  position: relative;
-}
-
-.check {
-  display: flex;
-  order: -1;
-}
-
 .btn {
-  width: 99%;
+  width: 100%;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 1px solid grey;
-  padding: 2%;
+  padding: 3.2%;
   background-color: #eeeef0;
 }
 
@@ -67,7 +49,17 @@ form {
   height: auto;
 }
 
-.elipsis {
+.eachitem {
+  border-bottom: 1px solid black;
+  width: 94.4%;
+  font-size: 25px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.vertical {
   position: absolute;
-  left: 95%;
+  left: 93%;
 }
