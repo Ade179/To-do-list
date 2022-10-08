@@ -210,4 +210,5 @@ const getItemsLocal = () => {
   });
   localStorage.setItem('items', JSON.stringify(itemArray));
 };
+
 window.addEventListener('load', getItemsLocal);
