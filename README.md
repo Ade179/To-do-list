@@ -22,6 +22,20 @@
 - Twitter: [@twitterhandle](https://twitter.com/@juwon_adesanya)
 - LinkedIn: [LinkedIn](www.linkedin.com/in/adejuwon-adesanya-237b54239)
 
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites: Knowledge of HTMML, CSS, JavaScript
+
+### Setup: Use a code editor of your choice(VS code) recommended
+
+### Install: you can copy the ssh key of the project and clone in your local machine
+
+### Usage
+
+### Run tests: run on local host from your code editor terminal by running the command 'npm start'
+
+### Deployment
+
 
 ## Show your support
 
