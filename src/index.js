@@ -1,19 +1,12 @@
 import './style.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';
-
-class List {
-  constructor(description, completed, id) {
-    this.description = description;
-    this.completed = completed;
-    this.id = id;
-  }
-}
-
+import List from './modules/List.js';
+/* eslint-disable no-plusplus */
 const container = document.querySelector('.container');
 const form = document.querySelector('.form');
 const inputtxt = document.querySelector('#inp');
-const clearAll = document.querySelector('.btn')
+const clearAll = document.querySelector('.btn');
 
 let itemArray = [] || JSON.parse(localStorage.getItem('items'));
 
@@ -205,16 +198,16 @@ const getItemsLocal = () => {
     });
   }
 
-  clearAll.addEventListener('click',()=>{
-    const local = localStorage.getItem('items')
-    const data = JSON.parse(local)
-    const checkDelete = data.filter(item => item.completed === false)
-   for(let i =0; i<checkDelete.length; i++){
-    checkDelete[i].index = i + 1;
-   }
-   localStorage.setItem('items', JSON.stringify(checkDelete))
-   window.location.reload()
-  })
+  clearAll.addEventListener('click', () => {
+    const local = localStorage.getItem('items');
+    const data = JSON.parse(local);
+    const checkDelete = data.filter((item) => item.completed === false);
+    for (let i = 0; i < checkDelete.length; i++) {
+      checkDelete[i].index = i + 1;
+    }
+    localStorage.setItem('items', JSON.stringify(checkDelete));
+    window.location.reload();
+  });
   localStorage.setItem('items', JSON.stringify(itemArray));
 };
 window.addEventListener('load', getItemsLocal);
