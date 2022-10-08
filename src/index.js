@@ -2,6 +2,7 @@ import './style.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 import '@fortawesome/fontawesome-free/js/all.js';
 import List from './modules/List.js';
+import completeItem from './modules/complete.js';
 /* eslint-disable no-plusplus */
 const container = document.querySelector('.container');
 const form = document.querySelector('.form');
@@ -9,20 +10,6 @@ const inputtxt = document.querySelector('#inp');
 const clearAll = document.querySelector('.btn');
 
 let itemArray = [] || JSON.parse(localStorage.getItem('items'));
-
-const completeItem = () => {
-  const localData = localStorage.getItem('items');
-  const parsedData = JSON.parse(localData);
-  const eachItem = document.querySelectorAll('.span');
-  for (let i = 0; i < eachItem.length; i += 1) {
-    if (eachItem[i].classList.contains('strike')) {
-      parsedData[i].completed = true;
-    } else {
-      parsedData[i].completed = false;
-    }
-    localStorage.setItem('items', JSON.stringify(parsedData));
-  }
-};
 
 // Edit items
 const editItems = (oldItem, newy, spano) => {
@@ -210,5 +197,4 @@ const getItemsLocal = () => {
   });
   localStorage.setItem('items', JSON.stringify(itemArray));
 };
-
 window.addEventListener('load', getItemsLocal);
