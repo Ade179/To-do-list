@@ -13,6 +13,7 @@ class List {
 const container = document.querySelector('.container');
 const form = document.querySelector('.form');
 const inputtxt = document.querySelector('#inp');
+const clearAll = document.querySelector('.btn')
 
 let itemArray = [] || JSON.parse(localStorage.getItem('items'));
 
@@ -204,6 +205,16 @@ const getItemsLocal = () => {
     });
   }
 
+  clearAll.addEventListener('click',()=>{
+    const local = localStorage.getItem('items')
+    const data = JSON.parse(local)
+    const checkDelete = data.filter(item => item.completed === false)
+   for(let i =0; i<checkDelete.length; i++){
+    checkDelete[i].index = i + 1;
+   }
+   localStorage.setItem('items', JSON.stringify(checkDelete))
+   window.location.reload()
+  })
   localStorage.setItem('items', JSON.stringify(itemArray));
 };
 window.addEventListener('load', getItemsLocal);
