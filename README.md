@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-#Todo list
+To-do List
 
 > This project helps the mastery of objects in Javascript and webpack. It was displayed from the distribution folder and written in Es6. Its features are divivded into modules for easy accessibility and following javascript best practices
 
