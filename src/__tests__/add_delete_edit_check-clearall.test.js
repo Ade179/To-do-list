@@ -4,6 +4,7 @@
 import store from '../modules/store.js';
 import renderList from '../modules/function.js';
 import formClear from '../modules/cleartask.js';
+
 document.body.innerHTML = '<input type="text" name="task" class="text-field full" placeholder="Add to your list..." required> <ul class="task-list"> </ul> <a class="clear-btn" href="">Clear all completed</a>';
 
 describe('Store', () => {
@@ -23,7 +24,6 @@ describe('Delete task', () => {
     expect(listElement).toHaveLength(0);
   });
 });
-
 
 describe('Edit task', () => {
   test('Should edit text when clicked', () => {
