@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bfdabd94cd.js" crossorigin="anonymous"></script>
     <title>To Do List</title>
-</head>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script></head>
 
 <body>
     <div class="container">
@@ -16,21 +16,20 @@
                 <i id="refresh" class="fa-solid fa-rotate"></i>
             </button>
         </div>
-        <div>
-            <form class="form b-bottom box" name="form" method="get">
-                <input type="text" name="task" class="text-field full" placeholder="Add to your list..." required>
-                <button type="submit" class="submit btn first-btn">
-                    &#8629
-                </button>
-            </form>
-        </div>
+        <form class="form b-bottom box" name="form" method="get">
+            <input type="text" name="task" class="text-field full" placeholder="Add to your list..." required>
+            <button type="submit" class="submit btn first-btn">
+                &#8629
+            </button>
+        </form>
         <ul class="task-list">
-        
+            <!-- taskList from js -->
         </ul>
         <div>
             <a class="clear-btn" href="">Clear all completed</a>
         </div>
     </div>
+    <!-- &#10247 -->
 </body>
 
 </html>
