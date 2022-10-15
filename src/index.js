@@ -9,7 +9,7 @@ const form = document.querySelector('.form');
 const inputtxt = document.querySelector('#inp');
 const clearAll = document.querySelector('.btn');
 
-let itemArray = [] || JSON.parse(localStorage.getItem('items'));
+export let itemArray = [] || JSON.parse(localStorage.getItem('items'));
 
 // Edit items
 const editItems = (oldItem, newy, spano) => {
@@ -38,7 +38,8 @@ const editItems = (oldItem, newy, spano) => {
   });
 };
 
-// Remove items
+// //Remove items
+
 const removeItems = (li) => {
   container.removeChild(li);
   let count = 1;
@@ -49,7 +50,7 @@ const removeItems = (li) => {
   itemArray = JSON.parse(localStorage.getItem('items'));
   itemArray.splice((li.index) - 1, 1);
   localData = itemArray;
-  // Update index of elements
+  // Update index of elements5.
   localData.map((item) => {
     item.id = count;
     count += 1;
@@ -57,7 +58,6 @@ const removeItems = (li) => {
   });
   localStorage.setItem('items', JSON.stringify(localData));
 };
-
 // create remove update delete
 const crud = (newDescription) => {
   const newItem = document.createElement('li');
