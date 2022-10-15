@@ -1,3 +1,6 @@
+const container = document.querySelector('.container');
+let itemArray = [] || JSON.parse(localStorage.getItem('items'));
+
 const removeItems = (li) => {
   container.removeChild(li);
   let count = 1;

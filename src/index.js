@@ -9,7 +9,7 @@ const form = document.querySelector('.form');
 const inputtxt = document.querySelector('#inp');
 const clearAll = document.querySelector('.btn');
 
-export let itemArray = [] || JSON.parse(localStorage.getItem('items'));
+let itemArray = [] || JSON.parse(localStorage.getItem('items'));
 
 // Edit items
 const editItems = (oldItem, newy, spano) => {
