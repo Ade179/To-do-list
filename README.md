@@ -1,60 +1,41 @@
-# ToDoList
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> Description the project.
-This project we will help you organize your day. 
+To-do List
 
-- Add tasks
-- Delete tasks
-- And clear all tasks keep your list clean.
+> This project helps the mastery of objects in Javascript and webpack. It was displayed from the distribution folder and written in Es6. Its features are divivded into modules for easy accessibility and following javascript best practices
+
 
 ## Built With
 
-- HTML
-- CSS
-- JavaScript
-
-## Live Demo (if available)
-
-[Live Demo Link](https://nurkaamre.github.io/ToDoList-Structure/dist)
+- HTML and CSS
+-JavaScript
+- Linters
+-Webpack
 
 
-## Getting Started
+### Go live : https://ade179.github.io/To-do-list/dist/
+## Authors
+
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/Ade179)
+- Twitter: [@twitterhandle](https://twitter.com/@juwon_adesanya)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/adejuwon-adesanya-237b54239)
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
- - Basic knowledge of HTML, CSS and JavaScript.
- - NPM and webpack knowledge is a plus.
- - Text editor IDE.
- - Terminal.
- - Any web browser.
-### Setup
+### Prerequisites: Knowledge of HTMML, CSS, JavaScript
 
-Install VS, node, linters and webpack! + gitbash
+### Setup: Use a code editor of your choice(VS code) recommended
 
-### Install
-To Clone this repository, copy and paste and run on your terminal.
+### Install: you can copy the ssh key of the project and clone in your local machine
+
 ### Usage
 
-Navigate to the cloned or downloaded directory, open the dist folder, look for index.html file, and using your browser open that file.
+### Run tests: run on local host from your code editor terminal by running the command 'npm start'
 
-### Run tests
+### Deployment
 
-Once u made changes check linter errors
-
-## Author
-
-👤 **Author1**
-
-- GitHub: [@NurkaAmre](https://github.com/githubhandle)
-- Ln: (https://www.linkedin.com/in/amre-nurgul/)
-
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -62,10 +43,12 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks for Microverse 
-- Thanks for W3 school
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
 
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
